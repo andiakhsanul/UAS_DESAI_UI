@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="Logo.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar 1</title>
+    <title>Ragil shop</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link
@@ -13,102 +14,120 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <div class="">
-        <img src="Logo.png" alt="my-avatar" />
-      </div>
-      <div id="menu-icon" class="menu-icon">
-        <i class="ph-fill ph-list"></i>
-      </div>
-      <ul id="menu-list" class="hidden">
-        <li>
-          <a href="#">home</a>
-        </li>
-        <li>
-          <a href="#">product</a>
-        </li>
-        <li>
-          <a href="#">Work</a>
-        </li>
-        <li>
-          <a href="#">hubungi</a>
-        </li>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid navbar1">
+        <a class="navbar-brand" href="#"><img src="Logo.png" /></a>
+        <a class="navbar-brand" href="#">Ragil Apps</a>
 
-        <div class="button">
-          <a href="#">sign up</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0"></ul>
+          <form class="d-flex ms-auto">
+            <ul class="navbar-nav mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-9">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">contact</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-outline-success" type="submit">
+                  Sign in
+                </button>
+              </li>
+            </ul>
+          </form>
         </div>
-      </ul>
+      </div>
     </nav>
 
-    <!-- ini untuk section yang pertama -->
-
-    <section class="container-fluid">
-      <div class="content">
-        <div class="title">Ragil Shop</div>
-        <div class="subtitle">
-          menyediakan berbagai macam air minum bermerk serta air isi ulang
+    <!-- hero section -->
+    <section id="hero">
+      <div class="container-fluid" id="hero1">
+        <div class="row">
+          <div class="col-12" id="content1">
+            <h1 class="text-center lg-1">Ragil Shop</h1>
+            <p class="text-center" id="paragraf">
+              perusahaan Air Minum yang Menyediakan Air Minum yang Segar
+            </p>
+            <div class="text-center" id="button">
+              <button type="button" class="btn btn-dark">Get started</button>
+            </div>
+          </div>
         </div>
-        <div class="button-primary">
-          <span class="text-71"> Get started </span>
+
+        <div class="row" id="browser">
+          <div class="text-center" id="slide">
+            <div class="carousel slide" id="carouselExample">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="aqua1.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="cleo.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="club.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="lpg.jpg" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- diatas engga responsive -->
-      <!-- <div class="row">
-        <div class="col-9 col-md-">
-          <p
-            style="
-              margin-bottom: 37px;
-              display: inline-block;
-              overflow-wrap: break-word;
-              font-family: 'Roboto';
-              font-weight: 500;
-              font-size: 50px;
-              color: #000000;
-            "
-          >
-            Ragil Shop
-          </p>
-        </div> -->
-      <!-- <div class="col-md-3 offset-sm-5">
-          <p
-            style="
-              margin: 0 48.8px 28.5px 49.8px;
-              display: inline-block;
-              text-align: center;
-              overflow-wrap: break-word;
-              font-family: 'Roboto';
-              font-weight: 400;
-              font-size: 18px;
-              color: #000000;
-              /* margin-left: -90px; */
-            "
-          >
-            perusahan air isi ulang yang menjual beberapa merk air minuman yang
-            lengkap
-          </p>
-        </div> -->
-      <!-- </div> -->
-
-      <!-- <div class="container-sm">100% wide until small breakpoint</div>
-      <div class="container-md">100% wide until medium breakpoint</div>
-      <div class="container-lg">100% wide until large breakpoint</div>
-      <div class="container-xl">100% wide until extra large breakpoint</div>
-      <div class="container-xxl">
-        100% wide until extra extra large breakpoint
-      </div> -->
-
-      <!-- <div class="row">
-        <div class="col-md-2 mx-auto" style="margin-top: 79px">
-          <h1>Ragil Shop</h1>
-        </div>
-      </div> -->
-
-
-      
+      <div class="container-fluid" id="hero2"></div>
     </section>
+
     <script src="main.js"></script>
   </body>
 </html>
