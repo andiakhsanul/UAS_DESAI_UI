@@ -19,11 +19,15 @@ html {
   height: 64px;
 }
 
+body {
+  background-color: #ecf9ff; /* Light cyan color */
+}
 /* hero 1 */
-
 #hero1 {
   height: 700px;
-  background-image: url('');
+  background-image: url("");
+  background-color: #ecf9ff; /* Light cyan color */
+  background-blend-mode: multiply;
   z-index: 0;
 }
 
@@ -57,13 +61,233 @@ html {
     position: relative;
     margin-top: -170px;
   }
+
+  #quote {
+    z-index: 999;
+    position: relative;
+  }
 }
 
+.carousel-control-next-icon {
+  background-color: #f8cba6;
+}
+.carousel-control-prev-icon {
+  background-color: #f8cba6;
+}
 /* hero2 */
 
 #hero2 {
   height: 400px;
-  background-color: #000000;
-  /* margin-top: -30px; */
+  background-color: #ecf9ff; /* Light blue color */
   position: relative;
+}
+
+#hero2-p {
+  margin-top: 132px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#retacle {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-top: 24px;
+}
+
+#pbaru {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* quoute */
+
+#quote {
+  height: 600px;
+  background-color: #fffbeb; /* Light blue color */
+  z-index: 6;
+  margin-top: px;
+}
+
+#judulquote {
+  font-size: 32px;
+  margin-top: 100px;
+}
+
+#quote2 {
+  margin-top: 24px;
+}
+
+#quote3 {
+  margin-top: 61px;
+}
+
+#gambartumpuk {
+  width: 491px;
+  height: 286px;
+  margin-top: 120px;
+  position: relative; /* Menjadikan container sebagai posisi relatif */
+}
+
+#image1 {
+  width: 400px;
+  height: 232.68px;
+  position: absolute; /* Menjadikan gambar 1 sebagai posisi absolut */
+  top: 80px; /* Atur posisi paling atas */
+  right: 100px; /* Atur posisi ke kiri */
+  z-index: 2; /* Menjadikan gambar 1 di atas gambar 2 */
+}
+
+#image2 {
+  width: 400px;
+  height: 232.68px;
+  position: absolute; /* Menjadikan gambar 2 sebagai posisi absolut */
+  top: 0px; /* Atur posisi sedikit di bawah gambar 1 */
+  left: 90px; /* Tidak perlu menetapkan left karena akan otomatis berada di sebelah kiri */
+  z-index: 1; /* Menjadikan gambar 2 di bawah gambar 1 */
+}
+
+@media screen and (max-width: 1199px) {
+  #gambartumpuk {
+    display: none;
+  }
+}
+
+/* postall */
+#postall {
+  height: 820px;
+  background-color: #ffe7cc; /* Light cyan color */
+}
+
+.card {
+  background-color: #80deea; /* Light blue color */
+  color: #006064; /* Dark blue color */
+}
+
+.card .btn-primary {
+  background-color: #00838f; /* Medium blue color */
+  border-color: #00838f; /* Medium blue color */
+}
+
+.card .card-title {
+  color: #00838f; /* Medium blue color */
+}
+
+.card-img-top {
+  width: 270px;
+  height: 270px;
+}
+
+.test {
+  padding-top: 96px;
+}
+
+#cardrow {
+  padding-top: 68px;
+}
+@media screen and (max-width: 767px) {
+  #postall {
+    height: auto;
+  }
+  #quote {
+    height: auto;
+  }
+}
+
+#oi {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* feauture */
+
+#feaa {
+  height: 600px;
+  background-color: #ffffff; /* Light blue color */
+}
+
+#bagkiri {
+  width: 720px;
+  /* background-image: url("background1.jpg");
+  background-size: cover; */
+  height: 600px;
+}
+
+#gambardep {
+  width: 320px;
+  height: 360px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-left: 198px;
+  margin-top: 120px;
+}
+
+#bagkanan {
+  width: 720px;
+  background-color: rgb(140, 15, 15);
+  height: 600px;
+}
+
+@media screen and (max-width: 1199px) {
+  #bagkiri {
+    width: 100%;
+    height: 600px;
+  }
+
+  #gambardep {
+    width: 320px;
+    height: 360px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-left: 198px;
+    margin-top: 120px;
+  }
+
+  #bagkanan {
+    width: 100%;
+    height: 600px;
+  }
+
+  #feaa {
+    height: auto;
+  }
+}
+
+/* forminputan */
+#login-section {
+  height: 568px;
+}
+
+#login-section .container {
+  height: 100%;
+}
+
+#login-section form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-section form label {
+  font-weight: bold;
+}
+
+#login-section form .form-control {
+  margin-bottom: 15px;
 }
