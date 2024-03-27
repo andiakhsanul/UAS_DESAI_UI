@@ -236,10 +236,14 @@ body {
 
 #bagkanan {
   width: 720px;
-  background-color: rgb(140, 15, 15);
+  background-color: rgb(255, 255, 255);
   height: 600px;
 }
 
+#bagkan {
+  padding-left: 100px;
+  padding-top: 179px;
+}
 @media screen and (max-width: 1199px) {
   #bagkiri {
     width: 100%;
