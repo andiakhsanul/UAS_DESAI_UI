@@ -6,6 +6,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+/* body{
+  margin: none;
+} */
+
 .navbar-brand img {
   width: 30px;
   height: 29px;
@@ -25,7 +29,8 @@ body {
 /* hero 1 */
 #hero1 {
   height: 700px;
-  background-image: url("");
+  background-image: url("back2.jpg");
+  background-size: cover;
   background-color: #ecf9ff; /* Light cyan color */
   background-blend-mode: multiply;
   z-index: 0;
@@ -78,7 +83,9 @@ body {
 
 #hero2 {
   height: 400px;
-  background-color: #ecf9ff; /* Light blue color */
+  /* background-image: url("background1.jpg");
+  background-size: cover; */
+  background-color: #ecf9ff;
   position: relative;
 }
 
@@ -110,6 +117,8 @@ body {
 
 #quote {
   height: 600px;
+  background-image: url("backg3.jpg");
+  background-size: cover;
   background-color: #fffbeb; /* Light blue color */
   z-index: 6;
   margin-top: px;
@@ -162,7 +171,9 @@ body {
 /* postall */
 #postall {
   height: 820px;
-  background-color: #ffe7cc; /* Light cyan color */
+  /* background-image: url("background1.jpg");
+  background-size: cover; */
+  background-color: #ecf9ff; /* Light cyan color */
 }
 
 .card {
@@ -217,8 +228,8 @@ body {
 
 #bagkiri {
   width: 720px;
-  /* background-image: url("background1.jpg");
-  background-size: cover; */
+  background-image: url("backg4.jpg");
+  background-size: cover;
   height: 600px;
 }
 
@@ -283,7 +294,7 @@ body {
 
 #login-section form {
   background-color: #f9f9f9;
-  padding: 20px;
+  padding-top: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -294,4 +305,75 @@ body {
 
 #login-section form .form-control {
   margin-bottom: 15px;
+}
+
+#judullog {
+  padding-top: 120px;
+}
+
+footer {
+  background-color: #f9f9f9;
+  height: 410px;
+}
+
+#foot {
+  padding-top: 111px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#garis {
+  background: #000000;
+  margin-bottom: 54px;
+  width: 1000px;
+  height: 2px;
+  margin-left: 230px;
+}
+
+@media screen and (max-width: 767px) {
+  #foot {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  #garis {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+/* #sos1 {
+  padding-left: 400px;
+}
+
+#sos2 {
+  margin-left: none;
+} */
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow the list items to wrap onto multiple lines if necessary */
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  ul {
+    flex-direction: column; /* Stack the list items vertically on small screens */
+  }
+
+  li {
+    margin-right: 0; /* Remove the right margin on small screens */
+    margin-bottom: 20px; /* Add a bottom margin on small screens */
+  }
 }
